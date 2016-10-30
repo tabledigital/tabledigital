@@ -1,0 +1,23 @@
+.intro {
+  @media(min-width: $bp-med) {
+    display: flex;
+  }
+
+  &__photos {
+    display: flex;
+    justify-content: space-around;
+
+    @media(min-width: $bp-med) {
+      flex-direction: column;
+      min-width: 150px;
+      width: 30%;
+    }
+  }
+
+  &__text {
+
+    @media(min-width: $bp-med) {
+      width: 70%;
+    }
+  }
+}

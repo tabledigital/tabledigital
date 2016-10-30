@@ -1,0 +1,23 @@
+$layout-padding: 40px 30px;
+
+.columns {
+  @media(min-width: $bp-med) {
+    display: flex;
+  }
+}
+
+.intro {
+  padding: $layout-padding;
+
+  @media(min-width: $bp-med) {
+    width: 60%;
+  }
+} 
+
+.contact {
+  padding: $layout-padding;
+
+  @media(min-width: $bp-med) {
+    width: 40%;
+  }
+}

@@ -1,0 +1,45 @@
+.bio {
+  margin: 20px 20px 0 0;
+
+  @media(min-width: $bp-med) {
+    margin: 0 0 0 25px;
+  }
+
+  &__caption {
+    font-family: $sans-serif;
+    margin: .5rem 0 1.5rem;
+    text-align: center;
+    width: 125px;
+  }
+
+  &__photo {
+    border-radius: 50%;
+
+    @supports(background-blend-mode: multiply) {
+      background: $grey-blue;
+      background-blend-mode: normal;
+      background-size: cover;
+      height: 125px;
+      transition: all .3s ease;
+      width: 125px;
+
+      &:hover {
+
+        background-blend-mode: luminosity;
+        border-radius: 50%;
+      }
+
+      img {
+        visibility: hidden;
+      }
+    }
+
+    &--andrew {
+      background-image: url(/assets/images/dryton-circle.jpg);
+    }
+
+    &--megan {
+      background-image: url(/assets/images/mefan-circle.jpg);
+    }
+  }
+}

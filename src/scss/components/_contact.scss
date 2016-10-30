@@ -1,0 +1,15 @@
+.contact {
+  background-color: $mustard;
+  color: $white;
+
+  a {
+    border-bottom: 1px solid $white;
+    color: rgba(255,255,255,.85);
+    //transition: .3s all ease;
+
+    &:hover {
+  		border-bottom: 2px solid $grey-blue;
+      color: $white;
+    }
+  }
+}

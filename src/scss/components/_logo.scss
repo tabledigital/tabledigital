@@ -1,0 +1,57 @@
+$circle-size-landscape: 10rem;
+$circle-size-mob: 15rem;
+$circle-size: 17rem;
+
+.logo {
+  border: 5px solid $white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #000;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: $circle-size-mob;
+  justify-content: center;
+  margin: 18vh auto;
+  padding: 15px;
+  text-align: center;
+  width: $circle-size-mob;
+
+  /*
+  @supports(backdrop-filter: brightness(80%) blur(6px)) {
+    backdrop-filter: brightness(80%) blur(6px);
+  }*/
+
+  @media(min-width: $bp-small-med) {
+    height: $circle-size;
+    margin: 13vh 0 0 10vw;
+    padding: 30px;
+    width: $circle-size;
+  }
+
+  @media(orientation: landscape) and (max-height: 545px) {
+    margin: 10vh 0 0 10vw;
+    height: $circle-size-landscape;
+    width: $circle-size-landscape;
+  }
+
+  &__text {
+  	font-size: 4.5rem;
+    font-weight: normal;
+    line-height: 1;
+  	margin: 0;
+    padding-bottom: 1rem;
+
+    @media(min-width: $bp-small-med) {
+      font-size: 6rem;
+    }
+
+    @media(orientation: landscape) and (max-height: 545px) {
+      font-size: 3.5rem;
+    }
+  }
+
+	&__small-text {
+		display: block;
+    font-size: .68em;
+  }
+}
