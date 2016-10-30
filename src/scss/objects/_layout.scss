@@ -1,6 +1,12 @@
 $layout-padding: 40px 30px;
 
+body {
+  background-color: $brown;
+}
+
 .columns {
+  background-color: $white;
+
   @media(min-width: $bp-med) {
     display: flex;
   }
@@ -12,7 +18,7 @@ $layout-padding: 40px 30px;
   @media(min-width: $bp-med) {
     width: 60%;
   }
-} 
+}
 
 .contact {
   padding: $layout-padding;

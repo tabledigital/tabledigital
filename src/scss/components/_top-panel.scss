@@ -1,5 +1,5 @@
 .top-panel {
-	background-image: url(../images/background.jpg);
+	background-image: url(../images/background-mobile.jpg);
 	background-blend-mode: multiply;
 	background-color: $light-grey-transparent;
 	background-position: right;
@@ -10,4 +10,12 @@
   @media(orientation: portrait) and (max-width: 400px) {
     background-position: 48% 0;
   }
+
+	@media(-webkit-min-device-pixel-ratio: 2.0) and (max-width: $bp-med) {
+		background-image: url(../images/background-mobile@2x.jpg);
+	}
+
+	@media(min-width: $bp-med) {
+		background-image: url(../images/background-web.jpg);
+	}
 }
